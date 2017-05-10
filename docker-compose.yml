@@ -1,0 +1,14 @@
+version: '3.2'
+services:
+  loadbalancer:
+    container_name: 'load-balancer'
+    image: 'loadbalancer'
+    environment:
+      - 'CONTAINERS_ADDRESS=$CONTAINERS_ADDRESS'
+    ports:
+      - '80:80'
+
+  server1:
+    container_name: 'server1'
+    image: 'nginx:alpine'
+
