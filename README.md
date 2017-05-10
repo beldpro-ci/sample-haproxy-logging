@@ -2,6 +2,12 @@
 
 <h5 align="center">Sample Docker container with HAProxy Logging ready</h5>
 
+### Building the Image
+
+```sh
+make image
+```
+
 ### LICENSE
 
 MIT
